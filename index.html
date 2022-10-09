@@ -82,9 +82,9 @@
 
     <form>
         <textarea rows="5" cols="200"> If there are any issues with this meeting. Please type them here.</textarea>
-        <input type="submit">
+        
     </form>
-    
+    <button>Submit</button>
     <br><br>
 
     <img width="320" height="240"src="assets/Distracted.gif">
@@ -116,6 +116,16 @@
             Credit Card Number: <input type="text">
             Credit Card Security Pin: <input type="text">
             <br>
+            Bank: 
+            <input list="Bank">
+            <datalist id="Bank">
+                <option value="Chase"></option>
+                <option value="Bofa">Bofa deez nuts</option>
+                <option value="Wells Fargo"></option>
+                <option value="CitiBank"></option>
+
+            </datalist>
+            <br>
             Social Security Number<input type="text">
             <br>
             I am:  <input type="radio" name="gender">Male         <input type="radio" name="gender">Female
@@ -131,6 +141,12 @@
             <br>
             <input type="submit">
         </fieldset>
+    </form>
+    <form>
+        Version:
+        <select id = "ver">
+            <option> 1.0</option>
+        </select>
     </form>
   </body>
 </html>
