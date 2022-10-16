@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /*    Honestly I prefer this method */
+        @font-face {
+            font-family: "myFont";
+            src: url(assets/FuzzyBubbles-Regular.ttf);
+        }
+
+        h2{
+            font-family: myFont;
+        }
+
+        #Title{
+            font-family: myFont;
+        }
+
+        body{
+            background-color: azure;   /* wow look this did absolutely nothing */
+        }
     </style>
   </head>
   <body>
     
     <header style="color:lightgrey">
-        I want to start off by ranting about not having CSS for this lab because almost all of the fancy stuff that you can add to HTML requires CSS or Javascript. I really wish we had CSS so that I can do all the fancy colors. (gradients)
-        <br>Idk man my comp sci class in high school did everything through CSS soooooo. This lab is going to look like those early internet websites.
+        Welp I get to do CSS now. Gonna replace the earlier text with this.
     </header>
     <main>
-        <h1>
+        <h1 id="Title">
             MEETING MINUTES
         </h1>
         <div>10-8-2022</div>
