@@ -18,6 +18,7 @@
 
         #Title{
             font-family: myFont;
+            margin:1% 40% 1% 50%
         }
 
         body{
@@ -115,11 +116,11 @@
     </video>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <hr>
-    <h1>Form to sign up for free $100</h1>
+    <h1 id="formTitle">Form to sign up for free $100</h1>
 
     <form>
         <fieldset>
-            <legend>Personal Info</legend>
+            <legend class="formLegends">Personal Info</legend>
             First name: <input type="text">
             <br>
             Last Name: 
@@ -131,7 +132,7 @@
         </fieldset>
 
         <fieldset>
-            <legend> Credentials</legend>
+            <legend class="formLegends"> Credentials</legend>
             Credit Card Number: <input type="text">
             Credit Card Security Pin: <input type="text">
             <br>
@@ -153,7 +154,7 @@
 
     <form>
         <fieldset>
-            <legend>I agree to</legend>
+            <legend class="formLegends">I agree to</legend>
             <input type="checkbox"> Release the company from any legal cases from this information
             <br><input type="checkbox"> immediately report to HR that I filled out the document
             <br><input type="checkbox"> Remove two factor authentification on my bank account

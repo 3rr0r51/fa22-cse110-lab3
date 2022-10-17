@@ -1,2 +1,12 @@
 /* Style for the index.html page */
 
+.formLegends{
+    font-family:'Trebuchet MS';  /*   hahah trebuchet go brrr */
+}
+
+#formTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 1px;
+    margin-left: 45%;
+  }
