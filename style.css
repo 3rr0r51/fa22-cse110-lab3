@@ -57,3 +57,11 @@ div.form{
     border-color:blue;
     border-style:groove;
 }
+
+.flexbox{
+    display:flex;
+}
+
+.flexbox > li{
+    width:1000px;
+}
