@@ -14,3 +14,12 @@
 #slides:hover{
     background-color:hsl(138, 100%, 50%);
 }
+
+h2 ~ em{ /* pretty much exclusively applies to the "no one else attended" words" */
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+
+body{
+    text-align:center;
+}
