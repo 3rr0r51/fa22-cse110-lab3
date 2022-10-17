@@ -52,4 +52,7 @@ a.link:active{
 
 div.form{
     padding: 100px 100px 100px 300px;
+    border-width:2px;
+    border-color:blue;
+    border-style:groove;
 }
