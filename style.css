@@ -70,3 +70,7 @@ div.form{
 ul li{
     padding:20px;
 }
+
+summary + p{
+    padding:50px;
+}
