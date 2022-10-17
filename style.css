@@ -38,3 +38,14 @@ form{
 a.link:active{
     background-color:yellow;
 }
+
+#img{
+    position:fixed;
+    right:0px;
+}
+
+#Title{
+    position:sticky;
+    top:0px;
+    padding: 10px;
+}
