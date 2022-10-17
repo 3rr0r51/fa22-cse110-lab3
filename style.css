@@ -23,3 +23,14 @@ h2 ~ em{ /* pretty much exclusively applies to the "no one else attended" words"
 body{
     text-align:center;
 }
+
+#spacing{
+    color:grey;
+    height:1000px;
+    width: 10px;
+}
+
+form{
+    max-width:70%;
+    min-width: 10%;
+}
