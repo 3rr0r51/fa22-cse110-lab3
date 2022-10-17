@@ -39,7 +39,7 @@ a.link:active{
     background-color:yellow;
 }
 
-#img{
+img[src="assets/Distracted.gif"]{
     position:fixed;
     right:0px;
     top:0px;
