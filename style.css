@@ -49,3 +49,10 @@ a.link:active{
     top:0px;
     padding: 10px;
 }
+
+div.form{
+    padding: 100px 100px 100px 300px;
+    border-width:2px;
+    border-color:blue;
+    border-style:groove;
+}
