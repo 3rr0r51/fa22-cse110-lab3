@@ -61,3 +61,12 @@ div.form{
 .flexbox > li{
     width:1000px;
 }
+
+.grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+ul li{
+    padding:20px;
+}
