@@ -20,7 +20,7 @@ h2 ~ em{ /* pretty much exclusively applies to the "no one else attended" words"
     text-decoration: underline;
 }
 
-body{
+h2{
     text-align:center;
 }
 
@@ -33,4 +33,8 @@ body{
 form{
     max-width:70%;
     min-width: 10%;
+}
+
+a.link:active{
+    background-color:yellow;
 }
