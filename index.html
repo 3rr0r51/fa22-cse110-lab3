@@ -12,18 +12,22 @@
             src: url(assets/FuzzyBubbles-Regular.ttf);
         }
 
-        h2{
+        *{
             font-family: myFont;
         }
         
 
         #Title{
-            font-family: myFont;
             margin:1% 40% 1% 50%
         }
 
         body{
             background-color: #F0FFFF;   /* wow look this did absolutely nothing */
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
         }
     </style>
   </head>
@@ -40,7 +44,9 @@
 
         <section>
             <h2>Attendees</h2>
-            Somerville Freeman <br> Ben Dover <br> <em>No one else attended. Guys, come on. You know the meetings are important</em>
+            Somerville Freeman <br> 
+            Ben Dover <br> 
+            <em id="important">No one else attended. Guys, come on. You know the meetings are important</em>
         </section>
 
         <section>
@@ -52,14 +58,14 @@
         <section id="slides">
             <h2> Meeting Slides</h2>
             <nav>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Here</a>
+                <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Here</a>
             </nav>
         </section>
         <hr>
         
         <section>
             <h2> Meeting Topics</h2>
-            <ol>
+            <ol class="flexbox">
                 <li><h4> Welcome Bryan! Our Newly voted Vice President who also didn't show up</h4></li>
                 <li>Restrucre of Teams and Subteams</li>
                 <li>Securing Sponors and This Year's Budget</li>
@@ -69,7 +75,7 @@
 
         <section>
             <h2>Introducing Bryan</h2>
-            <ul>
+            <ul class="grid">
                 <li> Previous Google CEO</li>
                 <li> <b>20</b> years of experience in Carbon</li>
                 <li> Best skill is Googling</li>
@@ -101,73 +107,80 @@
         <h3><i>Meeting ends with notice that the next meeting begins in 14 minutes</i></h3>
     </footer>
 
-    <form>
+    <form class="hide">
         <textarea rows="5" cols="200"> If there are any issues with this meeting. Please type them here.</textarea>
         
     </form>
-    <button>Submit</button>
+    <button class="hide">Submit</button>
     <br><br>
 
-    <img width="320" height="240" src="assets/Distracted.gif" alt="You've been distracted">
+    <img id="img" width="320" height="240" src="assets/Distracted.gif" alt="You've been distracted">
     <audio controls autoplay muted>
         <source src="assets/You've_Been_DIstracted.mp3" type="audio/mpeg">
     </audio>
     <video width="320" height="240" controls>
         <source src="assets/Among_Us_distraction_dance_animation.mp4" type="audio/mp4">
     </video>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="spacing">
+
+    </div>
+
     <hr>
-    <h1 id="formTitle">Form to sign up for free $100</h1>
 
-    <form>
-        <fieldset>
-            <legend class="formLegends">Personal Info</legend>
-            First name: <input type="text">
-            <br>
-            Last Name: 
-            <br>
-            Date of Birth: <input type="date">
-            <br>
-            Mother's Maiden Name:<input type="text">
-            
-        </fieldset>
+    <div class="form">
+        <h1 id="formTitle">Form to sign up for free $100</h1>
 
-        <fieldset>
-            <legend class="formLegends"> Credentials</legend>
-            Credit Card Number: <input type="text">
-            Credit Card Security Pin: <input type="text">
-            <br>
-            Bank: 
-            <input list="Bank">
-            <datalist id="Bank">
-                <option value="Chase"></option>
-                <option value="Bofa">Bofa deez nuts</option>
-                <option value="Wells Fargo"></option>
-                <option value="CitiBank"></option>
+        <form>
+            <fieldset>
+                <legend class="formLegends">Personal Info</legend>
+                First name: <input type="text">
+                <br>
+                Last Name: 
+                <br>
+                Date of Birth: <input type="date">
+                <br>
+                Mother's Maiden Name:<input type="text">
+                
+            </fieldset>
 
-            </datalist>
-            <br>
-            Social Security Number<input type="text">
-            <br>
-            I am:  <input type="radio" name="gender">Male         <input type="radio" name="gender">Female
-        </fieldset>
-    </form>
+            <fieldset>
+                <legend class="formLegends"> Credentials</legend>
+                Credit Card Number: <input type="text">
+                Credit Card Security Pin: <input type="text">
+                <br>
+                Bank: 
+                <input list="Bank">
+                <datalist id="Bank">
+                    <option value="Chase"></option>
+                    <option value="Bofa">Bofa deez nuts</option>
+                    <option value="Wells Fargo"></option>
+                    <option value="CitiBank"></option>
 
-    <form>
-        <fieldset>
-            <legend class="formLegends">I agree to</legend>
-            <input type="checkbox"> Release the company from any legal cases from this information
-            <br><input type="checkbox"> immediately report to HR that I filled out the document
-            <br><input type="checkbox"> Remove two factor authentification on my bank account
-            <br>
-            <input type="submit">
-        </fieldset>
-    </form>
-    <form>
-        Version:
-        <select id = "ver">
-            <option> 1.0</option>
-        </select>
-    </form>
+                </datalist>
+                <br>
+                Social Security Number<input type="text">
+                <br>
+                I am:  <input type="radio" name="gender">Male         <input type="radio" name="gender">Female
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend class="formLegends">I agree to</legend>
+                <input type="checkbox"> Release the company from any legal cases from this information
+                <br><input type="checkbox"> immediately report to HR that I filled out the document
+                <br><input type="checkbox"> Remove two factor authentification on my bank account
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <form>
+            Version:
+            <select id = "ver">
+                <option> 1.0</option>
+            </select>
+        </form>
+    </div>
   </body>
 </html>
